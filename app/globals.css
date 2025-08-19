@@ -1,14 +1,15 @@
-import "./globals.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-export const metadata = {
-  title: "Vital Vibe",
-  description: "Health & fitness web app",
-};
+:root {
+  --brand-blue: #001489;
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="zh-HK">
-      <body className="min-h-screen bg-white">{children}</body>
-    </html>
-  );
+/* 可選：全域小樣式 */
+html, body {
+  height: 100%;
+}
+body {
+  background: #fff;
 }
